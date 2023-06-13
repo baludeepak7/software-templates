@@ -75,7 +75,7 @@ spec:
       input:
         allowedHosts: ["gitlab.com"]
         description: This is ${{ parameters.component_id }}
-        repoUrl: http://gitlab.com/this4620624
+        repoUrl: https://gitlab.com/this4620624/pet-store.git
 
     - id: register
       name: Register
