@@ -87,7 +87,7 @@ spec:
   output:
     links:
       - title: Repository
-        url: ${{ steps.publish.output.remoteUrl }}
+        url: https://gitlab.com/this4620624
       - title: Open in catalog
         icon: catalog
         entityRef: ${{ steps.register.output.entityRef }}
