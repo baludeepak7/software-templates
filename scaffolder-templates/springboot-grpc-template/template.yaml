@@ -40,6 +40,12 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+        swagger_yaml:
+          title: Swagger YAML
+          type: string
+          format: data-uri
+          description: Upload a Swagger YAML file
+          ui:field: FileUpload     
     - title: Choose a location
       required:
         - repoUrl
@@ -68,6 +74,7 @@ spec:
           owner: ${{ parameters.owner }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           http_port: 8080
+          swagger_yaml: ${{ parameters.swagger_yaml }}
 
     - id: publish
       name: Publish
