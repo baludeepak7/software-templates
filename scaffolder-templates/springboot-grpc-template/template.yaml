@@ -45,7 +45,7 @@ spec:
           type: string
           format: data-uri
           description: Upload a Swagger YAML file
-          ui:field: FileUpload     
+          ui:field: File 
     - title: Choose a location
       required:
         - repoUrl
